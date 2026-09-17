@@ -27,6 +27,13 @@
     footer { text-align: center; color: #999; margin-top: 30px; font-size: 14px; }
   </style>
 </head>
+<script>
+  var pwd = prompt("请输入密码：");
+  if (pwd !== "20260504") {
+    document.body.innerHTML = "<h1 style='text-align:center;margin-top:50px;'>密码错误 🔒</h1>";
+    throw new Error("Access denied");
+  }
+</script>
 <body>
   <h1>🎁 给康~的悄悄话</h1>
   <p style="text-align:center;">这个页面会一直扩容，每个有意义的日子（也没准是我想你的时候）都会多一段声音。</p>
